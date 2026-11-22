@@ -1,0 +1,37 @@
+name: Matrix Contribution Visualizations
+
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "README.md"
+      - ".github/workflows/matrix-contributions.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    name: Render real GitHub contribution activity
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate emerald Matrix snake from contribution calendar
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ajaytilak341
+          outputs: |
+            dist/github-contribution-grid-snake.svg?color_snake=%23A3FFB0&color_dots=%23050808,%230B2416,%230E4429,%230F9D58,%234ADE80
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%23A3FFB0&color_dots=%23050808,%230B2416,%230E4429,%230F9D58,%234ADE80
+
+      - name: Publish generated SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
