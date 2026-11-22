@@ -74,19 +74,43 @@ Build useful, dependable software by combining intelligent models with thoughtfu
 **Frontend:** React, Next.js, TypeScript, Tailwind CSS  
 **Tools:** Git, GitHub, VS Code, Docker
 
-## MISSION TELEMETRY
+## MATRIX TELEMETRY // LIVE CONTRIBUTIONS
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ajaytilak341&show_icons=true&theme=transparent&hide_border=true&title_color=75D7FF&icon_color=75D7FF&text_color=C9D5E5&rank_icon=github" alt="GitHub statistics" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ajaytilak341&layout=compact&theme=transparent&hide_border=true&title_color=75D7FF&text_color=C9D5E5" alt="Top languages" />
+
+  **01 — CONTRIBUTION MATRIX**
+
+  <img width="100%" src="https://gh-heat.anishroy.com/api/ajaytilak341/svg?theme=green&amp;darkMode=true&amp;colors=050808%2C0b2416%2C0e4429%2C0f9d58%2C4ade80&amp;bg=05070d&amp;textColor=86efac&amp;cellSize=12&amp;cellGap=3&amp;shape=square&amp;radius=2&amp;showMonthLabels=true&amp;showDayLabels=true&amp;showLegend=true" alt="Live GitHub contribution heatmap in emerald Matrix colors" />
+
+  <sub>Live calendar sourced from GitHub's public contribution graph. The heatmap is cached briefly by its image service.</sub>
+
 </div>
 
 <div align="center">
-  <img width="95%" src="https://streak-stats.demolab.com?user=ajaytilak341&theme=transparent&hide_border=true&ring=75D7FF&fire=F5B86B&currStreakLabel=75D7FF&sideLabels=C9D5E5&dates=8A9AAF" alt="GitHub contribution streak" />
+
+  **02 — MATRIX TRACE // CONTRIBUTION SNAKE**
+
+  <img width="100%" src="https://raw.githubusercontent.com/ajaytilak341/ajaytilak341/output/github-contribution-grid-snake.svg" alt="Animated emerald snake following real GitHub contribution activity" />
+
+  <sub>Generated from actual GitHub contribution data by GitHub Actions. Refreshes daily and when the main branch is updated.</sub>
+
 </div>
 
 <div align="center">
-  <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=ajaytilak341&bg_color=00000000&color=C9D5E5&line=75D7FF&point=F5B86B&area=true&hide_border=true" alt="GitHub contribution activity graph" />
+
+  **03 — ENGINEERING ACTIVITY**
+
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ajaytilak341&amp;show_icons=true&amp;theme=transparent&amp;hide_border=true&amp;title_color=86efac&amp;icon_color=22c55e&amp;text_color=cbd5e1&amp;rank_icon=github" alt="GitHub statistics" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ajaytilak341&amp;layout=compact&amp;theme=transparent&amp;hide_border=true&amp;title_color=86efac&amp;text_color=cbd5e1" alt="Top programming languages" />
+
+</div>
+
+<div align="center">
+  <img width="95%" src="https://streak-stats.demolab.com?user=ajaytilak341&amp;theme=transparent&amp;hide_border=true&amp;ring=22c55e&amp;fire=4ade80&amp;currStreakLabel=86efac&amp;sideLabels=cbd5e1&amp;dates=64748b" alt="GitHub contribution streak" />
+</div>
+
+<div align="center">
+  <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=ajaytilak341&amp;bg_color=05070d&amp;color=cbd5e1&amp;line=22c55e&amp;point=86efac&amp;area=true&amp;hide_border=true" alt="GitHub contribution activity graph in emerald green" />
 </div>
 
 ## TRANSMISSION CHANNELS
