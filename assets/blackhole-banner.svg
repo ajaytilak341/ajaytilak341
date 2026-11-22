@@ -1,43 +1,134 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-<title id="title">Ajay Tilak V — Singularity Mission Control</title>
-<desc id="desc">A cinematic golden black hole and accretion disk on a dark starfield, with a minimal mission-control interface.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">AJAYTILAK341 — Singularity Mission Control</title>
+<desc id="desc">A cinematic black hole with a molten amber accretion ring, orbital HUD graphics, starfield, telemetry panels and a perspective grid.</desc>
 <defs>
-  <radialGradient id="bg"><stop offset="0" stop-color="#17100a"/><stop offset=".55" stop-color="#08090e"/><stop offset="1" stop-color="#03050a"/></radialGradient>
-  <radialGradient id="glow"><stop offset="0" stop-color="#fff4d6" stop-opacity=".95"/><stop offset=".24" stop-color="#ffc36a" stop-opacity=".45"/><stop offset="1" stop-color="#f58a2b" stop-opacity="0"/></radialGradient>
-  <linearGradient id="disk" x1="0" x2="1"><stop stop-color="#8d4a19" stop-opacity=".05"/><stop offset=".28" stop-color="#ffd58d"/><stop offset=".5" stop-color="#fff8df"/><stop offset=".72" stop-color="#f5a64c"/><stop offset="1" stop-color="#8d4a19" stop-opacity=".05"/></linearGradient>
-  <linearGradient id="ring" x1="0" x2="1"><stop stop-color="#7a3e16"/><stop offset=".45" stop-color="#ffe2a9"/><stop offset=".7" stop-color="#f4a94f"/><stop offset="1" stop-color="#6c3717"/></linearGradient>
-  <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
-  <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+  <radialGradient id="space"><stop offset="0" stop-color="#321307"/><stop offset=".45" stop-color="#180904"/><stop offset="1" stop-color="#080503"/></radialGradient>
+  <radialGradient id="coreGlow"><stop offset="0" stop-color="#ff8a25" stop-opacity=".44"/><stop offset=".48" stop-color="#ff4d08" stop-opacity=".16"/><stop offset="1" stop-color="#ff4d08" stop-opacity="0"/></radialGradient>
+  <linearGradient id="plasma" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#9c3107" stop-opacity=".08"/><stop offset=".22" stop-color="#ff6b13"/><stop offset=".43" stop-color="#fff0ad"/><stop offset=".54" stop-color="#ffae32"/><stop offset=".77" stop-color="#ff5a0c"/><stop offset="1" stop-color="#7d2507" stop-opacity=".08"/></linearGradient>
+  <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff4c7"/><stop offset=".23" stop-color="#ffba49"/><stop offset=".56" stop-color="#ff640e"/><stop offset="1" stop-color="#8e2907"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#291106" stop-opacity=".88"/><stop offset="1" stop-color="#100804" stop-opacity=".56"/></linearGradient>
+  <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse"><path d="M54 0H0V54" fill="none" stroke="#e88832" stroke-opacity=".12" stroke-width="1"/></pattern>
+  <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="15" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="dust" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.2"/></filter>
+  <clipPath id="lower"><rect x="0" y="450" width="1600" height="450"/></clipPath>
 </defs>
-<rect width="1200" height="360" fill="url(#bg)"/>
-<g fill="#f8e5c4" opacity=".78">
-  <circle cx="42" cy="54" r="1.2"/><circle cx="94" cy="275" r="1"/><circle cx="165" cy="103" r="1.4"/><circle cx="224" cy="32" r=".9"/>
-  <circle cx="305" cy="305" r="1.2"/><circle cx="382" cy="70" r="1"/><circle cx="454" cy="310" r="1.1"/><circle cx="512" cy="28" r="1.3"/>
-  <circle cx="685" cy="39" r="1.1"/><circle cx="754" cy="300" r="1.1"/><circle cx="844" cy="66" r="1"/><circle cx="926" cy="314" r="1.1"/>
-  <circle cx="1011" cy="55" r="1.3"/><circle cx="1087" cy="265" r="1"/><circle cx="1150" cy="104" r="1.2"/><circle cx="1168" cy="321" r=".9"/>
+
+<rect width="1600" height="900" fill="url(#space)"/>
+<rect width="1600" height="900" fill="url(#grid)"/>
+<g fill="#ffd28a">
+  <circle cx="72" cy="120" r="1.5"/><circle cx="183" cy="80" r="1"/><circle cx="318" cy="186" r="1.4"/><circle cx="411" cy="78" r="1.1"/>
+  <circle cx="520" cy="142" r="1"/><circle cx="627" cy="82" r="1.5"/><circle cx="1010" cy="79" r="1.3"/><circle cx="1134" cy="160" r="1"/>
+  <circle cx="1280" cy="82" r="1.5"/><circle cx="1494" cy="164" r="1.2"/><circle cx="1526" cy="720" r="1.2"/><circle cx="84" cy="760" r="1"/>
+  <circle cx="250" cy="650" r="1.1"/><circle cx="1360" cy="680" r="1.2"/><circle cx="1120" cy="820" r="1"/><circle cx="430" cy="820" r="1.1"/>
 </g>
-<g stroke="#d68a40" fill="none" opacity=".45">
-  <path d="M32 48V28H132M1068 28h100v20M32 312v20h100M1068 332h100v-20"/>
-  <path d="M180 28h65m-52 0v7m14-7v4m14-4v7M955 28h65m-52 0v7m14-7v4m14-4v7"/>
-  <circle cx="600" cy="142" r="137" stroke-dasharray="2 9"/>
-  <circle cx="600" cy="142" r="158" stroke-dasharray="1 12" opacity=".5"/>
+
+<!-- Frame and mission header -->
+<g fill="none" stroke="#e68b31" stroke-opacity=".62">
+  <path d="M30 70V30H150M1450 30h120v40M30 830v40h120M1450 870h120v-40" stroke-width="2"/>
+  <path d="M150 30h128M1320 30h130M30 110v150M1570 110v150M30 650v150M1570 650v150" stroke-opacity=".26"/>
+  <path d="M470 32h180m300 0h180M470 868h180m300 0h180" stroke-opacity=".4"/>
 </g>
-<ellipse cx="600" cy="153" rx="310" ry="105" fill="url(#glow)" opacity=".42" filter="url(#blur)"/>
-<g transform="translate(600 150)">
-  <ellipse rx="286" ry="66" fill="none" stroke="#8c4a1f" stroke-width="20" opacity=".18" filter="url(#soft)"/>
-  <ellipse rx="279" ry="55" fill="none" stroke="url(#disk)" stroke-width="17" opacity=".94"/>
-  <ellipse rx="258" ry="45" fill="none" stroke="#ffca79" stroke-width="4" stroke-dasharray="95 12 36 18 140 10" opacity=".8"/>
-  <ellipse rx="230" ry="35" fill="none" stroke="#fff1cb" stroke-width="2.6" stroke-dasharray="40 15 90 22 28 12" opacity=".85"/>
-  <ellipse rx="198" ry="27" fill="none" stroke="#d77828" stroke-width="5" stroke-dasharray="120 20 55 18" opacity=".75"/>
-  <circle r="84" fill="#000"/>
-  <circle r="92" fill="none" stroke="url(#ring)" stroke-width="5" opacity=".95"/>
-  <circle r="103" fill="none" stroke="#ffd89b" stroke-width="1.3" opacity=".7"/>
-  <circle r="122" fill="none" stroke="#e18c3e" stroke-width="1" stroke-dasharray="3 8" opacity=".55"/>
+<g font-family="monospace" fill="#f5c17a" letter-spacing="3">
+  <text x="70" y="58" font-size="18">AJAYTILAK341</text>
+  <text x="800" y="58" font-size="13" text-anchor="middle" opacity=".8">SINGULARITY MISSION CONTROL // ORBITAL ANALYSIS</text>
+  <text x="1530" y="58" font-size="12" text-anchor="end">SYSTEM ONLINE</text>
 </g>
-<g fill="#f7bb6e" font-family="monospace" font-size="9" letter-spacing="2" opacity=".78">
-  <text x="54" y="62">MISSION LOG // SINGULARITY</text>
-  <text x="1146" y="62" text-anchor="end">AJAYTILAK341 // ONLINE</text>
-  <text x="54" y="302">AI / ML • FULL-STACK • EDGE AI</text>
-  <text x="1146" y="302" text-anchor="end">BUILD • EXPLORE • ITERATE</text>
+
+<!-- Central black-hole glow -->
+<ellipse cx="800" cy="442" rx="460" ry="310" fill="url(#coreGlow)" filter="url(#soft)"/>
+<ellipse cx="800" cy="443" rx="350" ry="125" fill="none" stroke="#ff6a12" stroke-width="44" opacity=".16" filter="url(#glow)"/>
+
+<!-- Accretion disk: broad luminous plasma ribbons -->
+<g filter="url(#glow)">
+  <ellipse cx="800" cy="445" rx="420" ry="128" fill="none" stroke="url(#plasma)" stroke-width="25" opacity=".82"/>
+  <ellipse cx="800" cy="445" rx="390" ry="105" fill="none" stroke="#ffb13f" stroke-width="8" opacity=".86"/>
+  <ellipse cx="800" cy="445" rx="350" ry="91" fill="none" stroke="#fff1b2" stroke-width="3" opacity=".92"/>
+  <path d="M390 455C520 340 685 330 800 350C990 385 1130 520 1260 430" fill="none" stroke="#ff7416" stroke-width="16" opacity=".72"/>
+  <path d="M370 435C520 520 665 525 800 492C970 450 1110 360 1240 455" fill="none" stroke="#ffb03f" stroke-width="10" opacity=".78"/>
+  <path d="M435 445C555 390 680 385 800 402C955 424 1060 485 1170 455" fill="none" stroke="#fff3c3" stroke-width="3" opacity=".9"/>
 </g>
+
+<!-- Event horizon and photon ring -->
+<circle cx="800" cy="442" r="188" fill="#020202"/>
+<circle cx="800" cy="442" r="195" fill="none" stroke="url(#rim)" stroke-width="9" filter="url(#glow)"/>
+<circle cx="800" cy="442" r="211" fill="none" stroke="#ffc86a" stroke-width="2" opacity=".72"/>
+<circle cx="800" cy="442" r="228" fill="none" stroke="#f08b2c" stroke-width="1.5" stroke-dasharray="3 11" opacity=".78"/>
+<circle cx="800" cy="442" r="255" fill="none" stroke="#ff9c39" stroke-width="1" stroke-dasharray="85 22 18 28" opacity=".6">
+  <animateTransform attributeName="transform" type="rotate" from="0 800 442" to="360 800 442" dur="100s" repeatCount="indefinite"/>
+</circle>
+<circle cx="800" cy="442" r="281" fill="none" stroke="#f6ad58" stroke-width="1" stroke-dasharray="2 14" opacity=".52">
+  <animateTransform attributeName="transform" type="rotate" from="360 800 442" to="0 800 442" dur="150s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Orbital streaks -->
+<g fill="none" stroke-linecap="round">
+  <path d="M365 467C480 350 580 300 740 309" stroke="#ff8c24" stroke-width="2" stroke-dasharray="45 14 4 18" opacity=".8">
+    <animate attributeName="stroke-dashoffset" from="0" to="-180" dur="16s" repeatCount="indefinite"/>
+  </path>
+  <path d="M860 578C1020 560 1140 520 1230 448" stroke="#ffc16b" stroke-width="1.5" stroke-dasharray="30 22 6 16" opacity=".72">
+    <animate attributeName="stroke-dashoffset" from="0" to="160" dur="19s" repeatCount="indefinite"/>
+  </path>
+  <path d="M530 280C640 185 970 175 1085 298" stroke="#ffb24c" stroke-width="2" stroke-dasharray="3 12" opacity=".55"/>
+</g>
+
+<!-- Plasma particles -->
+<g fill="#ffad40" opacity=".8">
+  <circle cx="348" cy="430" r="2.5"><animate attributeName="opacity" values=".25;1;.25" dur="2.8s" repeatCount="indefinite"/></circle>
+  <circle cx="392" cy="500" r="1.8"><animate attributeName="opacity" values="1;.2;1" dur="3.2s" repeatCount="indefinite"/></circle>
+  <circle cx="1210" cy="395" r="2.2"><animate attributeName="opacity" values=".2;1;.2" dur="2.4s" repeatCount="indefinite"/></circle>
+  <circle cx="1142" cy="510" r="1.7"><animate attributeName="opacity" values="1;.3;1" dur="3.5s" repeatCount="indefinite"/></circle>
+  <circle cx="640" cy="250" r="2"/><circle cx="980" cy="230" r="1.7"/><circle cx="700" cy="625" r="1.6"/><circle cx="910" cy="635" r="1.8"/>
+</g>
+
+<!-- Left-side telemetry panels -->
+<g font-family="monospace">
+  <rect x="95" y="155" width="265" height="135" rx="8" fill="url(#panel)" stroke="#d87a27" stroke-opacity=".75"/>
+  <path d="M95 184h265" stroke="#d87a27" stroke-opacity=".4"/>
+  <text x="118" y="178" font-size="12" fill="#ffd18a" letter-spacing="2">GRAVITATIONAL FIELD</text>
+  <path d="M118 220C145 200 163 244 190 220S235 203 260 224S316 213 337 225" fill="none" stroke="#ff9b39" stroke-width="2"/>
+  <path d="M118 250h215M118 262h175M118 274h195" stroke="#c87a39" stroke-opacity=".5" stroke-width="2"/>
+  <rect x="95" y="315" width="265" height="145" rx="8" fill="url(#panel)" stroke="#d87a27" stroke-opacity=".75"/>
+  <text x="118" y="342" font-size="12" fill="#ffd18a" letter-spacing="2">ELECTROMAGNETIC RADIATION</text>
+  <g fill="none" stroke="#e98c35" stroke-width="4" opacity=".9">
+    <circle cx="145" cy="395" r="21" stroke-dasharray="95 40"/><circle cx="218" cy="395" r="21" stroke-dasharray="72 63"/><circle cx="291" cy="395" r="21" stroke-dasharray="110 25"/>
+  </g>
+  <path d="M118 438h215M118 449h160" stroke="#b96d2c" stroke-opacity=".55" stroke-width="2"/>
+</g>
+
+<!-- Right-side telemetry panels -->
+<g font-family="monospace">
+  <rect x="1240" y="145" width="270" height="112" rx="8" fill="url(#panel)" stroke="#d87a27" stroke-opacity=".75"/>
+  <text x="1265" y="174" font-size="12" fill="#ffd18a" letter-spacing="2">ORBITAL SYSTEMS</text>
+  <ellipse cx="1375" cy="211" rx="78" ry="20" fill="none" stroke="#d9822e" stroke-width="1.5"/>
+  <ellipse cx="1375" cy="211" rx="38" ry="20" fill="none" stroke="#d9822e" stroke-width="1" transform="rotate(-28 1375 211)"/>
+  <circle cx="1375" cy="211" r="5" fill="#ffb04d"/>
+  <rect x="1240" y="280" width="270" height="145" rx="8" fill="url(#panel)" stroke="#d87a27" stroke-opacity=".75"/>
+  <text x="1265" y="309" font-size="12" fill="#ffd18a" letter-spacing="2">SIGNAL ANALYSIS</text>
+  <path d="M1265 365c28-46 50 42 78 0s50-42 76 0 46 36 66-2" fill="none" stroke="#ff9b39" stroke-width="2"/>
+  <path d="M1265 390h215M1265 402h170" stroke="#c87a39" stroke-opacity=".55" stroke-width="2"/>
+  <rect x="1240" y="450" width="270" height="118" rx="8" fill="url(#panel)" stroke="#d87a27" stroke-opacity=".75"/>
+  <text x="1265" y="478" font-size="12" fill="#ffd18a" letter-spacing="2">REPOSITORY SECTORS</text>
+  <g fill="none" stroke="#f79b37" stroke-width="5">
+    <circle cx="1292" cy="523" r="17" stroke-dasharray="80 28"/><circle cx="1375" cy="523" r="17" stroke-dasharray="55 52"/><circle cx="1458" cy="523" r="17" stroke-dasharray="92 15"/>
+  </g>
+</g>
+
+<!-- Perspective floor -->
+<g clip-path="url(#lower)" opacity=".6">
+  <path d="M0 700L800 550L1600 700" fill="none" stroke="#e77f2a" stroke-opacity=".4"/>
+  <path d="M0 730L800 560L1600 730M0 775L800 580L1600 775M0 825L800 600L1600 825M0 880L800 620L1600 880" fill="none" stroke="#d97725" stroke-opacity=".34"/>
+  <path d="M100 900L680 590M260 900L720 590M430 900L760 590M600 900L790 590M1000 900L810 590M1200 900L850 590M1400 900L900 590M1550 900L930 590" fill="none" stroke="#d97725" stroke-opacity=".25"/>
+</g>
+<g font-family="monospace" fill="#e8b16d" font-size="11" letter-spacing="2">
+  <text x="72" y="795">MISSION CONTROL</text>
+  <text x="800" y="795" text-anchor="middle">EVENT HORIZON // DEEP SPACE COMPUTING</text>
+  <text x="1528" y="795" text-anchor="end">AI SYSTEMS // ONLINE</text>
+</g>
+<path d="M70 822H1530" stroke="#e28b36" stroke-opacity=".5" stroke-width="2"/>
+<path d="M70 822H1530" stroke="#ffb552" stroke-width="2" stroke-dasharray="2 16 70 24" opacity=".9">
+  <animate attributeName="stroke-dashoffset" from="0" to="-220" dur="12s" repeatCount="indefinite"/>
+</path>
+<circle cx="800" cy="822" r="24" fill="none" stroke="#ef9b42" stroke-width="2" opacity=".75"><animate attributeName="r" values="20;29;20" dur="4s" repeatCount="indefinite"/></circle>
+<circle cx="800" cy="822" r="5" fill="#ffd28a" filter="url(#glow)"/>
 </svg>
