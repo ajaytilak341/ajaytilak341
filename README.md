@@ -1,11 +1,5 @@
 <div align="center">
- <video src="C:\Users\Ajay Tilak V\Downloads\ACHIEVEMENTS"
-       width="100%"
-       autoplay
-       loop
-       muted
-       playsinline>
-</video>
+ <img src="assets/achievements.gif" width="100%" alt="Animated achievements banner" />
 
   <h1>AJAY TILAK V</h1>
   <h3>AI / ML ENGINEER · FULL-STACK DEVELOPER</h3>
