@@ -113,13 +113,6 @@ Build useful, dependable software by combining intelligent models with thoughtfu
   <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=ajaytilak341&amp;bg_color=05070d&amp;color=cbd5e1&amp;line=22c55e&amp;point=86efac&amp;area=true&amp;hide_border=true" alt="GitHub contribution activity graph in emerald green" />
 </div>
 
-## TRANSMISSION CHANNELS
-
-<div align="center">
-  [![GitHub](https://img.shields.io/badge/GitHub-Profile-111827?style=for-the-badge&logo=github)](https://github.com/ajaytilak341)
-</div>
-
-<div align="center">
 
 ### BUILD · EXPLORE · ITERATE
 
