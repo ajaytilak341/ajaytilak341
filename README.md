@@ -1,5 +1,5 @@
 <div align="center">
- <img src="assets/achievements.gif" width="100%" alt="Animated achievements banner" />
+ <img src="assets/blackhole-banner.svg" alt="Animated 3D-style black-hole mission-control banner" width="100%" />
 
   <h1>AJAY TILAK V</h1>
   <h3>AI / ML ENGINEER · FULL-STACK DEVELOPER</h3>
